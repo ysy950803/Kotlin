@@ -1,7 +1,9 @@
 /**
+ * 看官方文档时的一些学习笔记，很零散，权当记录
+ * 总的感觉来说，这门语言很次时代
+ * 虽然基于JVM，也兼容Java，但和前者有很大不同
  * Created by Sylvester on 2017/6/6.
  */
-
 fun main(args: Array<String>) {
 //    println("Hello, world!")
 //    doFun()
