@@ -100,11 +100,21 @@ fun checkNumber() {
 data class Point<T>(var x: T, var y: T)
 data class Point1<out T>(val x: T, val y: T)
 
+// 操作符符重载
 operator fun Point<Int>.unaryPlus() = Point(x, y)
 operator fun Point<Int>.unaryMinus() = Point(-x, -y)
 operator fun Point<Boolean>.not() = Point(!x, !y)
 
+data class Line<T>(var len: T)
+
+operator fun Line<Int>.inc() = Line(len++)
+
 fun tryOperator() {
     val p = Point(10, 20)
     println(-p)
+    println(p.unaryMinus())
+
+    val line = Line(1)
+    println(line.inc()) // 后自增，此行打印为1
+    println(line) // 2
 }
