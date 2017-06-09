@@ -18,7 +18,9 @@ fun main(args: Array<String>) {
 //    checkNumber()
 //    tryOperator()
 //    println(decimalDigitValue('6'))
-    printString()
+//    printString()
+//    testIf()
+    testWhen()
 }
 
 fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
@@ -146,8 +148,52 @@ fun decimalDigitValue(c: Char): Int {
 fun printString() {
     val text = """|fun (c in "foo")
     |   print(c)
-    |   // (づ｡◕‿‿◕｡)づ"""
+    |   // (づ｡◕‿‿◕｡)づ
+    """
     val text2 = text.trimMargin() // 通过此函数去除前导空格，默认用|作为边界前缀，也可以自定义
     println(text)
     println(text2)
+
+    val i = 10
+    val s = "abc"
+    val str = "$s.length is ${'$'}${s.length + i}"
+    println(str)
+}
+
+fun testIf() {
+    val a = 2
+    val b = 1
+    var max: Int
+    if (a > b) {
+        max = a
+    } else {
+        max = b
+    }
+    println(max)
+    // 以上是传统的条件语句用法
+    // Kotlin中的if可以胜任表达式的角色，因此不再需要三元运算符
+    // 这是新特性
+    max = if (a > b) a else b
+    println(max)
+    // 分支还可以是代码块，变量的值是表达式的值
+    val min = if (a < b) {
+        println("Choose a")
+        a
+    } else {
+        println("Choose b")
+        b
+    }
+    println(min)
+}
+
+fun testWhen() {
+    // When表达式取代经典的Switch语句，Lambda表达式
+    val x = 1
+    when(x) {
+        1 -> println("x is 1")
+        2 -> println("x is 2")
+        else -> {
+            println("x is neither 1 nor 2")
+        }
+    }
 }

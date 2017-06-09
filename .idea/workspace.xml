@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11163b55-518f-4196-99e7-0e23a4130973" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Counter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Line.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Point1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Box.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Box.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Comparable.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Comparable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Counter.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Counter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/HelloWorldKt.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/HelloWorldKt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Line.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Line.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Person.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Person.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Point.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Point.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Point1.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Point1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Source.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Source.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HelloWorld.kt" afterPath="$PROJECT_DIR$/src/HelloWorld.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="HelloWorld.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="149" column="66" lean-forward="false" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
+            <state relative-caret-position="339">
+              <caret line="185" column="16" lean-forward="true" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
               <folding>
                 <element signature="n#!!doc;n#main#0" expanded="false" />
                 <element signature="n#!!block;n#swap#0" expanded="false" />
@@ -42,7 +43,7 @@
                 <element signature="n#!!block;n#printHello#0" expanded="false" />
                 <element signature="n#!!block;n#asList#0" expanded="false" />
                 <element signature="n#!!block;n#Person#0" expanded="false" />
-                <element signature="e#1434#1499#0" expanded="false" />
+                <element signature="e#1466#1531#0" expanded="false" />
                 <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
                 <element signature="n#!!block;n#checkNumber#0" expanded="false" />
                 <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -76,6 +77,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/HelloWorld.kt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -586,7 +588,7 @@
       <workItem from="1496915795801" duration="3835000" />
       <workItem from="1496936518641" duration="375000" />
       <workItem from="1496938678417" duration="890000" />
-      <workItem from="1496974752293" duration="976000" />
+      <workItem from="1496974752293" duration="3826000" />
     </task>
     <task id="LOCAL-00001" summary="添加一些注释。">
       <created>1496919308737</created>
@@ -602,11 +604,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496922516216</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="字符串。">
+      <created>1496975889421</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1496975889421</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12332000" />
+    <option name="totallyTimeSpent" value="15182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -651,7 +660,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加一些注释。" />
     <MESSAGE value="操作符符重载。" />
-    <option name="LAST_COMMIT_MESSAGE" value="操作符符重载。" />
+    <MESSAGE value="字符串。" />
+    <option name="LAST_COMMIT_MESSAGE" value="字符串。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -678,7 +688,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -704,7 +714,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -730,7 +740,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -756,7 +766,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -782,7 +792,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -808,7 +818,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -834,7 +844,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -860,7 +870,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -886,7 +896,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -912,7 +922,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -938,7 +948,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -978,8 +988,9 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <first_editor relative-caret-position="255">
+            <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -987,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="149" column="66" lean-forward="false" selection-start-line="149" selection-start-column="66" selection-end-line="149" selection-end-column="66" />
+        <state relative-caret-position="339">
+          <caret line="185" column="16" lean-forward="true" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
           <folding>
             <element signature="n#!!doc;n#main#0" expanded="false" />
             <element signature="n#!!block;n#swap#0" expanded="false" />
@@ -1001,7 +1012,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1434#1499#0" expanded="false" />
+            <element signature="e#1466#1531#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
