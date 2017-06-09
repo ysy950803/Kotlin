@@ -16,7 +16,9 @@ fun main(args: Array<String>) {
 //    val pMin = Person(110)
 //    pMin.printName("I am pMin.")
 //    checkNumber()
-    tryOperator()
+//    tryOperator()
+//    println(decimalDigitValue('6'))
+    printString()
 }
 
 fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
@@ -97,11 +99,17 @@ fun checkNumber() {
     val ba = b + a // 虽然Kotlin不能隐式转换基本数据类型，但可以通过上下文推断出类型，这也算是一种变相的强制转换，体现了协变性
 }
 
+/**
+ * 操作符符重载，把基本的符号操作函数化
+ * 其意义在于增强了基本数据类型的可扩展性和可操纵性
+ * 同时也贴合了Kotlin扩展方法的设计
+ */
 data class Point<T>(var x: T, var y: T)
+
 data class Point1<out T>(val x: T, val y: T)
 
-// 操作符符重载
 operator fun Point<Int>.unaryPlus() = Point(x, y)
+
 operator fun Point<Int>.unaryMinus() = Point(-x, -y)
 operator fun Point<Boolean>.not() = Point(!x, !y)
 
@@ -117,4 +125,29 @@ fun tryOperator() {
     val line = Line(1)
     println(line.inc()) // 后自增，此行打印为1
     println(line) // 2
+
+    var counter = Counter(1)
+    counter = counter.plus(2)
+    println(counter)
+}
+
+data class Counter(var dayIndex: Int) {
+    operator fun plus(increment: Int): Counter {
+        return Counter(dayIndex + increment)
+    }
+}
+
+fun decimalDigitValue(c: Char): Int {
+    if (c !in '0'..'9')
+        throw IllegalArgumentException("Out of range")
+    return c.toInt() - '0'.toInt()
+}
+
+fun printString() {
+    val text = """|fun (c in "foo")
+    |   print(c)
+    |   // (づ｡◕‿‿◕｡)づ"""
+    val text2 = text.trimMargin() // 通过此函数去除前导空格，默认用|作为边界前缀，也可以自定义
+    println(text)
+    println(text2)
 }
