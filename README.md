@@ -3,7 +3,7 @@ Do less, Get more.
 
 This is a new language with fantastic features to welcome the next age.
 
-![Logo](https://github.com/ysy950803/Kotlin/blob/master/QQ20170608-192658%402x.png)
+![Logo](https://github.com/ysy950803/Kotlin/blob/master/kotlin_logo.png)
 
 ## Feeling
 More you learn, more you will feel that it likes Java, Python and JS where there are a great many advances as a programming language.
