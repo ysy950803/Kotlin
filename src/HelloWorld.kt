@@ -188,12 +188,19 @@ fun testIf() {
 
 fun testWhen() {
     // When表达式取代经典的Switch语句，Lambda表达式
-    val x = 1
+    val x = 2
+    val s = "2"
     when(x) {
         1 -> println("x is 1")
-        2 -> println("x is 2")
+//        2 -> println("x is 2")
+        3, 4 -> println("x is 3 or 4")
+        parseInt(s) -> println("s encode 2")
         else -> {
             println("x is neither 1 nor 2")
         }
     }
+}
+
+fun parseInt(str: String): Int {
+    return str.toInt()
 }
