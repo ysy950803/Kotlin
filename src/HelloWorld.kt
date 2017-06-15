@@ -20,7 +20,8 @@ fun main(args: Array<String>) {
 //    println(decimalDigitValue('6'))
 //    printString()
 //    testIf()
-    testWhen()
+//    testWhen()
+    smartTrans("abcd")
 }
 
 fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
@@ -190,11 +191,13 @@ fun testWhen() {
     // When表达式取代经典的Switch语句，Lambda表达式
     val x = 2
     val s = "2"
-    when(x) {
+    when (x) {
         1 -> println("x is 1")
 //        2 -> println("x is 2")
-        3, 4 -> println("x is 3 or 4")
-        parseInt(s) -> println("s encode 2")
+//        3, 4 -> println("x is 3 or 4") // 可以把多个分支条件放在一起，用逗号分隔
+//        parseInt(s) -> println("s encode 2") // 可以用任意表达式(而不只是常量)作为分支条件
+        in 1..10 -> println("x is in the range")
+        !in 10..20 -> println("x is not in the range")
         else -> {
             println("x is neither 1 nor 2")
         }
@@ -203,4 +206,20 @@ fun testWhen() {
 
 fun parseInt(str: String): Int {
     return str.toInt()
+}
+
+/**
+ * 智能转换
+ * 在许多情况下，不需要在Kotlin中使用显式转换操作符
+ */
+fun smartTrans(s: Any) {
+    if (s !is String)
+        return
+    println(s.length)
+    println(hasPrefix(s))
+}
+
+fun hasPrefix(x: Any) = when (x) {
+    is String -> x.startsWith("prefix")
+    else -> false
 }

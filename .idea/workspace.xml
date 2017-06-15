@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11163b55-518f-4196-99e7-0e23a4130973" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/HelloWorldKt.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/HelloWorldKt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Person.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Person.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HelloWorld.kt" afterPath="$PROJECT_DIR$/src/HelloWorld.kt" />
     </list>
@@ -21,8 +19,8 @@
       <file leaf-file-name="HelloWorld.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="181" column="12" lean-forward="false" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
+            <state relative-caret-position="475">
+              <caret line="219" column="1" lean-forward="true" selection-start-line="219" selection-start-column="1" selection-end-line="219" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc;n#main#0" expanded="false" />
                 <element signature="n#!!block;n#swap#0" expanded="false" />
@@ -35,7 +33,7 @@
                 <element signature="n#!!block;n#printHello#0" expanded="false" />
                 <element signature="n#!!block;n#asList#0" expanded="false" />
                 <element signature="n#!!block;n#Person#0" expanded="false" />
-                <element signature="e#1466#1531#0" expanded="false" />
+                <element signature="e#1491#1556#0" expanded="false" />
                 <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
                 <element signature="n#!!block;n#checkNumber#0" expanded="false" />
                 <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -99,7 +97,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -128,12 +128,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -581,7 +579,10 @@
       <workItem from="1496936518641" duration="375000" />
       <workItem from="1496938678417" duration="890000" />
       <workItem from="1496974752293" duration="4747000" />
-      <workItem from="1497063779306" duration="133000" />
+      <workItem from="1497063779306" duration="165000" />
+      <workItem from="1497233920059" duration="109000" />
+      <workItem from="1497517961668" duration="364000" />
+      <workItem from="1497518367915" duration="4793000" />
     </task>
     <task id="LOCAL-00001" summary="添加一些注释。">
       <created>1496919308737</created>
@@ -618,11 +619,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496987264518</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="When语句和表达式。">
+      <created>1497063929557</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1497063929557</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16236000" />
+    <option name="totallyTimeSpent" value="21534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -630,6 +638,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890411" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -641,7 +650,7 @@
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40273973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17447495" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17043619" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -653,7 +662,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890411" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -669,7 +677,8 @@
     <MESSAGE value="操作符符重载。" />
     <MESSAGE value="字符串。" />
     <MESSAGE value="Add some sources." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add some sources." />
+    <MESSAGE value="When语句和表达式。" />
+    <option name="LAST_COMMIT_MESSAGE" value="When语句和表达式。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -696,7 +705,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -722,7 +731,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -748,7 +757,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -774,7 +783,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -800,7 +809,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -826,7 +835,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -852,7 +861,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -878,7 +887,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -904,7 +913,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -930,7 +939,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -956,7 +965,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -982,7 +991,85 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
+            <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
+            <element signature="n#!!block;n#checkNumber#0" expanded="false" />
+            <element signature="n#!!doc;n#Point#0" expanded="false" />
+            <element signature="n#!!block;n#tryOperator#0" expanded="false" />
+            <element signature="n#!!block;n#plus#0;n#!!block;n#Counter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#main#0" expanded="false" />
+            <element signature="n#!!block;n#swap#0" expanded="false" />
+            <element signature="n#!!block;n#doFun#0" expanded="false" />
+            <element signature="n#!!block;n#Box#0" expanded="false" />
+            <element signature="n#!!block;n#Source#0" expanded="false" />
+            <element signature="n#!!block;n#doTOut#0" expanded="false" />
+            <element signature="n#!!block;n#Comparable#0" expanded="false" />
+            <element signature="n#!!block;n#doTIn#0" expanded="false" />
+            <element signature="n#!!block;n#printHello#0" expanded="false" />
+            <element signature="n#!!block;n#asList#0" expanded="false" />
+            <element signature="n#!!block;n#Person#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
+            <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
+            <element signature="n#!!block;n#checkNumber#0" expanded="false" />
+            <element signature="n#!!doc;n#Point#0" expanded="false" />
+            <element signature="n#!!block;n#tryOperator#0" expanded="false" />
+            <element signature="n#!!block;n#plus#0;n#!!block;n#Counter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#main#0" expanded="false" />
+            <element signature="n#!!block;n#swap#0" expanded="false" />
+            <element signature="n#!!block;n#doFun#0" expanded="false" />
+            <element signature="n#!!block;n#Box#0" expanded="false" />
+            <element signature="n#!!block;n#Source#0" expanded="false" />
+            <element signature="n#!!block;n#doTOut#0" expanded="false" />
+            <element signature="n#!!block;n#Comparable#0" expanded="false" />
+            <element signature="n#!!block;n#doTIn#0" expanded="false" />
+            <element signature="n#!!block;n#printHello#0" expanded="false" />
+            <element signature="n#!!block;n#asList#0" expanded="false" />
+            <element signature="n#!!block;n#Person#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
+            <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
+            <element signature="n#!!block;n#checkNumber#0" expanded="false" />
+            <element signature="n#!!doc;n#Point#0" expanded="false" />
+            <element signature="n#!!block;n#tryOperator#0" expanded="false" />
+            <element signature="n#!!block;n#plus#0;n#!!block;n#Counter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#main#0" expanded="false" />
+            <element signature="n#!!block;n#swap#0" expanded="false" />
+            <element signature="n#!!block;n#doFun#0" expanded="false" />
+            <element signature="n#!!block;n#Box#0" expanded="false" />
+            <element signature="n#!!block;n#Source#0" expanded="false" />
+            <element signature="n#!!block;n#doTOut#0" expanded="false" />
+            <element signature="n#!!block;n#Comparable#0" expanded="false" />
+            <element signature="n#!!block;n#doTIn#0" expanded="false" />
+            <element signature="n#!!block;n#printHello#0" expanded="false" />
+            <element signature="n#!!block;n#asList#0" expanded="false" />
+            <element signature="n#!!block;n#Person#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
@@ -1030,10 +1117,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-runtime-sources.jar!/kotlin/text/StringsJVM.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="175" column="18" lean-forward="false" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/HelloWorld.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="181" column="12" lean-forward="false" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
+        <state relative-caret-position="475">
+          <caret line="219" column="1" lean-forward="true" selection-start-line="219" selection-start-column="1" selection-end-line="219" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc;n#main#0" expanded="false" />
             <element signature="n#!!block;n#swap#0" expanded="false" />
@@ -1046,7 +1141,7 @@
             <element signature="n#!!block;n#printHello#0" expanded="false" />
             <element signature="n#!!block;n#asList#0" expanded="false" />
             <element signature="n#!!block;n#Person#0" expanded="false" />
-            <element signature="e#1466#1531#0" expanded="false" />
+            <element signature="e#1491#1556#0" expanded="false" />
             <element signature="n#!!block;n#printName#0;n#!!block;n#Person#0" expanded="false" />
             <element signature="n#!!block;n#checkNumber#0" expanded="false" />
             <element signature="n#!!doc;n#Point#0" expanded="false" />
