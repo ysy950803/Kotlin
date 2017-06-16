@@ -1,3 +1,5 @@
+package Basic
+
 /**
  * 看官方文档时的一些学习笔记，很零散，权当记录
  * 总的感觉来说，这门语言很次时代
@@ -5,27 +7,27 @@
  * Created by Sylvester on 2017/6/6.
  */
 fun main(args: Array<String>) {
-//    println("Hello, world!")
-//    doFun()
-//    printHello(null)
-//    val array = arrayOf(1, 2, 3)
-//    val arrList = arrayListOf(3, 2, 1)
-//    println(array)
-//    println(arrList)
-//    println(asList(1, 2, *array, 3))
-//    val pMin = Person(110)
-//    pMin.printName("I am pMin.")
-//    checkNumber()
-//    tryOperator()
-//    println(decimalDigitValue('6'))
-//    printString()
-//    testIf()
-//    testWhen()
-//    smartTrans("abcd")
-//    testFor()
-//    testWhile()
-//    testNothing()
-//    testNotation()
+    println("Hello, world!")
+    doFun()
+    printHello(null)
+    val array = arrayOf(1, 2, 3)
+    val arrList = arrayListOf(3, 2, 1)
+    println(array)
+    println(arrList)
+    println(asList(1, 2, *array, 3))
+    val pMin = Person(110)
+    pMin.printName("I am pMin.")
+    checkNumber()
+    tryOperator()
+    println(decimalDigitValue('6'))
+    printString()
+    testIf()
+    testWhen()
+    smartTrans("abcd")
+    testFor()
+    testWhile()
+    testNothing()
+    testNotation()
     val tR = testReturn()
     println(tR)
 }
@@ -82,7 +84,7 @@ class Person(val num: Int) {
 
     init {
         printName("name")
-        println("Person Init.")
+        println("Basic.Person Init.")
     }
 
     fun printName(name: String?) {
@@ -201,9 +203,9 @@ fun testWhen() {
         1 -> println("x is 1")
 //        2 -> println("x is 2")
 //        3, 4 -> println("x is 3 or 4") // 可以把多个分支条件放在一起，用逗号分隔
-//        parseInt(s) -> println("s encode 2") // 可以用任意表达式(而不只是常量)作为分支条件
+//        Basic.parseInt(s) -> println("s encode 2") // 可以用任意表达式(而不只是常量)作为分支条件
         in 1..10 -> println("x is in the range")
-        !in 10..20 -> println("x is not in the range")
+        !in 10..20 -> println("x is Basic.not in the range")
         else -> {
             println("x is neither 1 nor 2")
         }
@@ -260,7 +262,7 @@ fun testWhile() {
 data class Student(var name: String?)
 
 fun testNothing() {
-//    val stu = Student(null)
+//    val stu = Basic.Student(null)
     val stu = Student("ysy")
     val str = stu.name ?: fail("Name required")
     println(str)
