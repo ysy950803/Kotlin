@@ -21,7 +21,13 @@ fun main(args: Array<String>) {
 //    printString()
 //    testIf()
 //    testWhen()
-    smartTrans("abcd")
+//    smartTrans("abcd")
+//    testFor()
+//    testWhile()
+//    testNothing()
+//    testNotation()
+    val tR = testReturn()
+    println(tR)
 }
 
 fun <T> MutableList<T>.swap(index1: Int, index2: Int) {
@@ -222,4 +228,91 @@ fun smartTrans(s: Any) {
 fun hasPrefix(x: Any) = when (x) {
     is String -> x.startsWith("prefix")
     else -> false
+}
+
+fun testFor() {
+    val list = arrayOf(1, 2, 3, 4, 5, 6)
+    for (item in list) {
+        println(item)
+    }
+    for (index in list.indices) {
+        println(list[index])
+    }
+    for ((index, value) in list.withIndex()) {
+        println(index.toString() + " " + value)
+    }
+}
+
+fun testWhile() {
+    var x = 10
+    while (x > 0) {
+        x--
+        println(x)
+    }
+    println("----")
+    var y = 10
+    do {
+        y--
+        println(y)
+    } while (y > 0)
+}
+
+data class Student(var name: String?)
+
+fun testNothing() {
+//    val stu = Student(null)
+    val stu = Student("ysy")
+    val str = stu.name ?: fail("Name required")
+    println(str)
+}
+
+fun fail(msg: String): Nothing {
+    throw IllegalArgumentException(msg)
+}
+
+fun testNotation() {
+    break_1@ for (i in 1..10) {
+        break_2@ for (j in 1..20) {
+            println("i:" + i.toString() + " j:" + j)
+            if (i + j == 24) {
+                println("break")
+                break@break_1
+                // 经典语言中在双层循环中，break语句默认跳出内循环，Kotlin中可以通过标签控制跳至任意层
+            }
+        }
+    }
+
+    continue_1@ for (i in 1..10) {
+        continue_2@ for (j in 1..20) {
+            println("i:" + i.toString() + " j:" + j)
+            if (i + j == 24) {
+                println("continue")
+                continue@continue_1
+                // 经典语言中在双层循环中，continue语句默认继续走内循环，Kotlin中可以通过标签控制走任意层
+                // 此处跳到外层，相当于Java中在内层break
+            }
+        }
+    }
+}
+
+fun testReturn(): Int {
+    val list = arrayOf(1, 2, 3, 4, 5, 6)
+    list.forEach lit@ {
+        if (it == 3)
+            return@lit // 经典语言中在函数内return会直接返回到外部，Kotlin中可以通过标签系统在内部函数中灵活返回
+        println(it)
+    }
+    println("等价写法1")
+    list.forEach {
+        if (it == 3)
+            return@forEach // 使用隐式标签更方便
+        println(it)
+    }
+    println("等价写法2")
+    list.forEach(fun(value: Int) {
+        if (value == 3)
+            return
+        println(value)
+    })
+    return@testReturn 123 // 也可返回一个值
 }
