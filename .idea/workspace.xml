@@ -2,16 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11163b55-518f-4196-99e7-0e23a4130973" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/BasicKt.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Box.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Comparable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Counter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Line.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Person.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Point.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Point1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Source.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Student.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/HelloWorldKt.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/COMainKt.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Customer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Customer2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/DontCreateMe.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Empty.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Invoice.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Outer$Nested.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Outer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Outer2$Inner.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Outer2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Person.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Person2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Person3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Kotlin/ClassObject/Person4.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/BasicKt.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Box.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Box.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Comparable.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Comparable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Counter.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Counter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Line.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Line.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Person.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Person.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Point.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Point.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Point1.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Point1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Source.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Source.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/Basic/Student.class" afterPath="$PROJECT_DIR$/out/production/Kotlin/Basic/Student.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Kotlin/META-INF/Kotlin.kotlin_module" afterPath="$PROJECT_DIR$/out/production/Kotlin/META-INF/Kotlin.kotlin_module" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ClassObject/COMain.kt" afterPath="$PROJECT_DIR$/src/ClassObject/COMain.kt" />
     </list>
@@ -29,8 +45,8 @@
       <file leaf-file-name="COMain.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ClassObject/COMain.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="560">
+              <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -178,7 +194,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.Basic.HelloWorldKt">
+  <component name="RunManager" selected="Kotlin.ClassObject.COMainKt">
+    <configuration default="false" name="ClassObject.COMainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="ClassObject.COMainKt" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Kotlin" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -579,9 +608,15 @@
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Kotlin.Basic.HelloWorldKt" />
+      <item index="1" class="java.lang.String" itemvalue="Kotlin.ClassObject.COMainKt" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Kotlin.ClassObject.COMainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -613,7 +648,7 @@
       <workItem from="1497539597456" duration="326000" />
       <workItem from="1497539938949" duration="69000" />
       <workItem from="1498616806816" duration="78000" />
-      <workItem from="1498616907362" duration="1608000" />
+      <workItem from="1498616907362" duration="5540000" />
     </task>
     <task id="LOCAL-00001" summary="添加一些注释。">
       <created>1496919308737</created>
@@ -671,18 +706,27 @@
       <option name="project" value="LOCAL" />
       <updated>1497607229183</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Class.">
+      <created>1498635853254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1498635853254</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24668000" />
+    <option name="totallyTimeSpent" value="28600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890411" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -691,7 +735,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40136987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40136987" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15912762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -706,7 +750,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2890411" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -725,7 +768,8 @@
     <MESSAGE value="When语句和表达式。" />
     <MESSAGE value="循环控制，Nothing类型，跳转控制，标签系统。" />
     <MESSAGE value="更改目录结构，更清晰。" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改目录结构，更清晰。" />
+    <MESSAGE value="Class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2510,7 +2554,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Basic/HelloWorld.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
+        <state relative-caret-position="1462">
           <caret line="318" column="36" lean-forward="true" selection-start-line="318" selection-start-column="36" selection-end-line="318" selection-end-column="36" />
           <folding>
             <element signature="n#!!doc;n#main#0" expanded="false" />
@@ -2569,8 +2613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ClassObject/COMain.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="560">
+          <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
           <folding />
         </state>
       </provider>
