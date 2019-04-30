@@ -1,15 +1,38 @@
-@file:JvmName("Ext")
+@file:JvmName("ExtJVMName")
+
 package Advanced
 
 import java.io.File
+import java.util.*
 
-val topLevel = "top"
-fun showTopLevel() = print(topLevel)
+const val TOP_LEVEL = "topLevel"
+fun showTopLevel() = println(TOP_LEVEL)
 
 class Extension {
 
+//    companion object CREATOR : Parcelable.Creator<Extension>{
+//    }
+
+    object Singleton {
+
+        fun doSomething() {
+            println("doSomething")
+        }
+
+        @JvmStatic
+        fun makeSomething() {
+            println("makeSomething")
+        }
+    }
+
     companion object {
-        val TAG = "Extension"
+        const val TAG = "Extension"
+
+        @JvmStatic
+        fun staticFunc() {
+        }
+
+        val STATIC_OBJ = Date()
     }
 
     fun test1() {
