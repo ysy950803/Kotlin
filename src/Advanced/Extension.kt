@@ -1,6 +1,16 @@
+@file:JvmName("Ext")
+package Advanced
+
 import java.io.File
 
-class Advanced {
+val topLevel = "top"
+fun showTopLevel() = print(topLevel)
+
+class Extension {
+
+    companion object {
+        val TAG = "Extension"
+    }
 
     fun test1() {
         val string = String()
