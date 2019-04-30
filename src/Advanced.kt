@@ -24,12 +24,16 @@ class Advanced {
 
     fun test2() {
         val f = File("pathename")
-        
+
         f.readLines().forEach {
             print(it)
         }
-        
-        f.bufferedReader().use { 
+
+        val bytes = f.inputStream().use {
+            return@use it.readBytes()
+        }
+
+        f.bufferedReader().use {
             print(it.readText())
         }
     }
