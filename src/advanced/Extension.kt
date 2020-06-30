@@ -1,6 +1,6 @@
 @file:JvmName("ExtJVMName")
 
-package Advanced
+package advanced
 
 import java.io.File
 import java.util.*

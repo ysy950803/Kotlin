@@ -1,4 +1,4 @@
-package ClassObject
+package class_object
 
 /**
  * 类和对象

@@ -1,4 +1,4 @@
-package Basic
+package basic
 
 /**
  * 看官方文档时的一些学习笔记，很零散，权当记录

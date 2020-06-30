@@ -1,4 +1,4 @@
-package Advanced;
+package advanced;
 
 public class ADMain {
 
