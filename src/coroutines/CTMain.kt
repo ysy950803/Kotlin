@@ -86,7 +86,7 @@ fun main6() {
     }.forEach { value -> println(value) }
 }
 
-fun main() = runBlocking {
+fun main7() = runBlocking {
     // 启动并发的协程以验证主线程并未阻塞
     launch {
         for (k in 1..3) {
@@ -108,6 +108,7 @@ fun main() = runBlocking {
     (1..4).asFlow()
             .map { req -> performRequest(req) }
             .take(3)
+            .flowOn(Dispatchers.Default)
             .collect { resp -> println(resp) }
 
     val sum = (1..5).asFlow()
@@ -119,4 +120,81 @@ fun main() = runBlocking {
 suspend fun performRequest(request: Int): String {
     delay(1000)
     return "response $request"
+}
+
+fun main8() = runBlocking {
+    var time = measureTimeMillis {
+        foo().buffer().collect { value ->
+            if (value == 1) {
+                delay(200 * 4) // 假装我们花费 800 毫秒来处理它
+            }
+            println(value)
+        }
+    }
+    println("Collected in $time ms") // about 1000ms
+
+    time = measureTimeMillis {
+        foo().conflate().collect {
+            delay(200 * 4)
+            println(it)
+        }
+    }
+    println("Collected in $time ms")
+
+    time = measureTimeMillis {
+        foo().collectLatest { value -> // 取消并重新发射最后一个值
+            println("Collecting $value")
+            delay(200 * 4)
+            println("Done $value")
+        }
+    }
+    println("Collected in $time ms")
+}
+
+fun foo(): Flow<Int> = flow {
+    for (i in 1..4) {
+        delay(200) // 假装我们异步等待了 200 毫秒
+        emit(i) // 发射下一个值
+    }
+}
+
+@ExperimentalCoroutinesApi
+@FlowPreview
+fun main() = runBlocking<Unit> {
+    var nums = (1..4).asFlow()
+    var strs = flowOf("one", "two", "three", "four")
+    nums.zip(strs) { n, s -> "$n is $s" }.collect { println(it) }
+    println()
+
+    nums = nums.onEach { delay(300) }
+    strs = strs.onEach { delay(400) }
+    var startTime = System.currentTimeMillis()
+    // 其中，nums 或 strs 流中的每次发射都会打印一行
+    nums.combine(strs) { a, b -> "$a -> $b" }.collect {
+        println("$it at ${System.currentTimeMillis() - startTime} ms from start")
+    }
+    println()
+
+    startTime = System.currentTimeMillis()
+    nums.onEach { delay(100) }
+            .flatMapConcat { requestFlow(it) }
+            .collect { println("$it at ${System.currentTimeMillis() - startTime} ms from start") }
+    println()
+    startTime = System.currentTimeMillis()
+    nums.onEach { delay(100) }
+            .flatMapMerge { requestFlow(it) }
+            .collect { println("$it at ${System.currentTimeMillis() - startTime} ms from start") }
+    println()
+
+    nums.onEach { check(it <= 2) { "Collected $it" } }
+            .map { println(it) }
+            .onCompletion { cause -> if (cause != null) println("Flow completed exceptionally") }
+            .catch { cause -> println("Caught $cause") }
+            .launchIn(this)
+}
+
+fun requestFlow(i: Int): Flow<String> = flow {
+    emit("$i: First")
+    delay(500) // 等待 500 毫秒
+    emit("$i: Second")
 }
