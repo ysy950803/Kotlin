@@ -1,6 +1,10 @@
 package coroutines
 
 import kotlinx.coroutines.*
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.channels.ReceiveChannel
+import kotlinx.coroutines.channels.consumeEach
+import kotlinx.coroutines.channels.produce
 import kotlinx.coroutines.flow.*
 import kotlin.system.measureTimeMillis
 
@@ -160,7 +164,7 @@ fun foo(): Flow<Int> = flow {
 
 @ExperimentalCoroutinesApi
 @FlowPreview
-fun main() = runBlocking<Unit> {
+fun main9() = runBlocking<Unit> {
     var nums = (1..4).asFlow()
     var strs = flowOf("one", "two", "three", "four")
     nums.zip(strs) { n, s -> "$n is $s" }.collect { println(it) }
@@ -197,4 +201,62 @@ fun requestFlow(i: Int): Flow<String> = flow {
     emit("$i: First")
     delay(500) // 等待 500 毫秒
     emit("$i: Second")
+}
+
+@ExperimentalCoroutinesApi
+fun main10() = runBlocking {
+    val channel = Channel<Int>()
+    launch {
+        for (x in 1..5) channel.send(x * x)
+        channel.close() // 我们结束发送
+    }
+    println("${channel.receive()} by receive")
+    // 这里我们使用 `for` 循环来打印所有被接收到的元素（直到通道被关闭）
+    for (y in channel) println(y)
+    println("Done!")
+
+    produceSquares().consumeEach { println(it) }
+
+    var cur = numbersFrom(2)
+    repeat(10) {
+        val prime = cur.receive()
+        println(prime)
+        cur = filter(cur, prime)
+    }
+}
+
+@ExperimentalCoroutinesApi
+fun CoroutineScope.produceSquares(): ReceiveChannel<Int> = produce {
+    for (x in 1..5) send(x * x)
+}
+
+@ExperimentalCoroutinesApi
+fun CoroutineScope.numbersFrom(start: Int) = produce {
+    var x = start
+    while (true) send(x++) // infinite stream of integers from start
+}
+
+@ExperimentalCoroutinesApi
+fun CoroutineScope.filter(numbers: ReceiveChannel<Int>, prime: Int) = produce {
+    for (x in numbers) if (x % prime != 0) send(x)
+}
+
+data class Ball(var hits: Int)
+
+fun main() = runBlocking {
+    val table = Channel<Ball>() // 一个共享的 table（桌子）
+    launch { player("ping", table) }
+    launch { player("pong", table) }
+    table.send(Ball(0)) // 乒乓球
+    delay(3000) // 延迟 1 秒钟
+    coroutineContext.cancelChildren() // 游戏结束，取消它们
+}
+
+suspend fun player(name: String, table: Channel<Ball>) {
+    for (ball in table) { // 在循环中接收球
+        ball.hits++
+        println("$name $ball")
+        delay(300) // 等待一段时间
+        table.send(ball) // 将球发送回去
+    }
 }
