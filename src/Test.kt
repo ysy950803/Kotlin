@@ -4,7 +4,15 @@ import kotlin.math.sqrt
 
 fun main() {
 //    makeLoveHeart()
-    print(countPrimes(100))
+    println(countPrimes(100))
+
+    printMixMap("1" to "2", "2" to "3")
+}
+
+fun printMixMap(vararg pairs: Pair<String, Any?>) {
+    mapOf(*pairs, "test" to "1").forEach {
+        println("${it.key} to ${it.value}")
+    }
 }
 
 fun makeLoveHeart() {
