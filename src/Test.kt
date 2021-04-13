@@ -2,9 +2,52 @@ import java.util.*
 import kotlin.math.sin
 import kotlin.math.sqrt
 
+const val EXT_CATEGORIES_SEPARATOR = "\\"
+
 fun main() {
 //    makeLoveHeart()
-    print(countPrimes(100))
+//    println(countPrimes(100))
+//
+//    printMixMap("1" to "2", "2" to "3")
+//
+//    val categories = arrayListOf("A", "B\\")
+//    val rawCategories = categories.joinToString(
+//            EXT_CATEGORIES_SEPARATOR.toString()
+//    ) { category ->
+//        // drop occurrences of EXT_CATEGORIES_SEPARATOR in category names
+//        category.filter { it.toString() != EXT_CATEGORIES_SEPARATOR }
+//    }
+//    println(rawCategories)
+//    println(rawCategories.split(EXT_CATEGORIES_SEPARATOR))
+
+//    val editCode = 0b10001001
+//    println(editCode)
+//    println(isEditable(editCode, 0))
+
+    val nums = mutableListOf(1, 2, 3, 4, 5)
+    println(nums.associate {
+        Pair("key:$it", "value:${it + 1}")
+    })
+    println(nums.associateBy {
+        "key:${it}"
+    })
+    println(nums.associateWith {
+        "value:${it + 1}"
+    })
+
+    for (i in 0..3) {
+        println(i)
+    }
+}
+
+fun isEditable(editCode: Int, index: Int) : Boolean {
+    return ((editCode shr index) and 1) == 1
+}
+
+fun printMixMap(vararg pairs: Pair<String, Any?>) {
+    mapOf(*pairs, "test" to "1").forEach {
+        println("${it.key} to ${it.value}")
+    }
 }
 
 fun makeLoveHeart() {
