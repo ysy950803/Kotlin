@@ -24,20 +24,22 @@ fun main() {
 //    println(editCode)
 //    println(isEditable(editCode, 0))
 
-    val nums = mutableListOf(1, 2, 3, 4, 5)
-    println(nums.associate {
-        Pair("key:$it", "value:${it + 1}")
-    })
-    println(nums.associateBy {
-        "key:${it}"
-    })
-    println(nums.associateWith {
-        "value:${it + 1}"
-    })
+//    val nums = mutableListOf(1, 2, 3, 4, 5)
+//    println(nums.associate {
+//        Pair("key:$it", "value:${it + 1}")
+//    })
+//    println(nums.associateBy {
+//        "key:${it}"
+//    })
+//    println(nums.associateWith {
+//        "value:${it + 1}"
+//    })
+//
+//    for (i in 0..3) {
+//        println(i)
+//    }
 
-    for (i in 0..3) {
-        println(i)
-    }
+    Manager.test()
 }
 
 fun isEditable(editCode: Int, index: Int) : Boolean {
