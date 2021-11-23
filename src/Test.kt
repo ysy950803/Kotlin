@@ -1,3 +1,6 @@
+import java.io.BufferedReader
+import java.io.File
+import java.io.FileReader
 import java.util.*
 import kotlin.math.sin
 import kotlin.math.sqrt
@@ -39,10 +42,31 @@ fun main() {
 //        println(i)
 //    }
 
-    Manager.test()
+//    Manager.test()
+
+    val file = File("/Users/yaoshengyu/Downloads/apache2/merge_acc.log")
+    BufferedReader(FileReader(file)).use { reader ->
+        var line: String
+        var ip: String
+        val ipMap = hashMapOf<String, Int>()
+        while (true) {
+            line = reader.readLine() ?: break
+            if (line.isBlank()) continue
+            ip = line.split(" - - ")[0]
+            ipMap[ip] = ipMap.getOrDefault(ip, 0) + 1
+//            println("iptables -I INPUT -s $line -j DROP")
+        }
+        ipMap.entries.sortedBy { it.value }.associateBy({ it.key }, { it.value }).forEach {
+//            if (it.value >= 10) {
+//                println("firewall-cmd --zone=public --add-rich-rule 'rule family=\"ipv4\" source address=\"${it.key}\" reject' --permanent")
+//                println(it.key)
+//            }
+            println("${it.key} ${it.value}")
+        }
+    }
 }
 
-fun isEditable(editCode: Int, index: Int) : Boolean {
+fun isEditable(editCode: Int, index: Int): Boolean {
     return ((editCode shr index) and 1) == 1
 }
 
