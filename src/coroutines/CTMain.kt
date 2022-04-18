@@ -6,6 +6,7 @@ import kotlinx.coroutines.channels.ReceiveChannel
 import kotlinx.coroutines.channels.consumeEach
 import kotlinx.coroutines.channels.produce
 import kotlinx.coroutines.flow.*
+import java.util.concurrent.Executors
 import kotlin.system.measureTimeMillis
 
 fun log(msg: String) = println("[${Thread.currentThread().name}] $msg")
@@ -110,14 +111,14 @@ fun main7() = runBlocking {
     }
 
     (1..4).asFlow()
-            .map { req -> performRequest(req) }
-            .take(3)
-            .flowOn(Dispatchers.Default)
-            .collect { resp -> println(resp) }
+        .map { req -> performRequest(req) }
+        .take(3)
+        .flowOn(Dispatchers.Default)
+        .collect { resp -> println(resp) }
 
     val sum = (1..5).asFlow()
-            .map { it * it }
-            .reduce { lastSum, it -> lastSum + it }
+        .map { it * it }
+        .reduce { lastSum, it -> lastSum + it }
     println(sum)
 }
 
@@ -181,20 +182,20 @@ fun main9() = runBlocking<Unit> {
 
     startTime = System.currentTimeMillis()
     nums.onEach { delay(100) }
-            .flatMapConcat { requestFlow(it) }
-            .collect { println("$it at ${System.currentTimeMillis() - startTime} ms from start") }
+        .flatMapConcat { requestFlow(it) }
+        .collect { println("$it at ${System.currentTimeMillis() - startTime} ms from start") }
     println()
     startTime = System.currentTimeMillis()
     nums.onEach { delay(100) }
-            .flatMapMerge { requestFlow(it) }
-            .collect { println("$it at ${System.currentTimeMillis() - startTime} ms from start") }
+        .flatMapMerge { requestFlow(it) }
+        .collect { println("$it at ${System.currentTimeMillis() - startTime} ms from start") }
     println()
 
     nums.onEach { check(it <= 2) { "Collected $it" } }
-            .map { println(it) }
-            .onCompletion { cause -> if (cause != null) println("Flow completed exceptionally") }
-            .catch { cause -> println("Caught $cause") }
-            .launchIn(this)
+        .map { println(it) }
+        .onCompletion { cause -> if (cause != null) println("Flow completed exceptionally") }
+        .catch { cause -> println("Caught $cause") }
+        .launchIn(this)
 }
 
 fun requestFlow(i: Int): Flow<String> = flow {
@@ -243,7 +244,7 @@ fun CoroutineScope.filter(numbers: ReceiveChannel<Int>, prime: Int) = produce {
 
 data class Ball(var hits: Int)
 
-fun main() = runBlocking {
+fun main11() = runBlocking {
     val table = Channel<Ball>() // 一个共享的 table（桌子）
     launch { player("ping", table) }
     launch { player("pong", table) }
@@ -259,4 +260,32 @@ suspend fun player(name: String, table: Channel<Ball>) {
         delay(300) // 等待一段时间
         table.send(ball) // 将球发送回去
     }
+}
+
+fun main() {
+//    val scope = CoroutineScope(newSingleThreadContext("TEST-1"))
+//    scope.launch {
+//        delay(1000)
+//        println("1 ${Thread.currentThread()}")
+//        delay(2000)
+//        println("2")
+//    }
+//    scope.launch {
+//        println("3 ${Thread.currentThread()}")
+//    }
+//    println("4")
+
+    val executor = Executors.newSingleThreadExecutor()
+    executor.execute {
+        Thread.sleep(1000)
+        println("1 ${Thread.currentThread()}")
+        Thread.sleep(2000)
+        println("2")
+    }
+    executor.execute {
+        println("3 ${Thread.currentThread()}")
+    }
+    println("4")
+
+    Thread.sleep(10000)
 }
